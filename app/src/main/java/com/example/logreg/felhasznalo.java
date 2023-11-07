@@ -38,7 +38,7 @@ public abstract class felhasznalo extends SQLiteOpenHelper {
         );
         onCreate(sqLiteDatabase);
     }
-    public boolean rogzites(String email, String felhnev, String jelszo,String teljesnev)
+    public boolean regisztracio(String email, String felhnev, String jelszo,String teljesnev)
     {
         SQLiteDatabase database = this.getWritableDatabase();
         ContentValues values = new ContentValues();
