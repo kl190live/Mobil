@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userEmailEditText"
+        android:hint="E-mail cím"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameEditText"
+        android:hint="Felhasználónév"
+        android:layout_below="@id/userEmailEditText"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserpasEditText"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/usernameEditText"
+        android:hint="Jelszó"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/realnameEditText"
+        android:hint="Teljes név"
+        android:layout_below="@id/UserpasEditText"
+        />
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/realnameEditText"
+        android:text="Regisztráció"
+        android:id="@+id/finishButton"
+        android:textSize="20sp"
+        />
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/finishButton"
+        android:text="Vissza "
+        android:textSize="20sp"
+        android:id="@+id/backButton"
+        />
+
+
+</RelativeLayout>
